@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DiaryFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewDay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constrainedHeight="true"
+            android:paddingTop="?attr/actionBarSize"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/buttonAddDay"
+            tools:listitem="@layout/card_view_diary" />
+
+        <Button
+            android:id="@+id/buttonAddDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="@dimen/button_width"
+            android:text="@string/add_day"
+            android:textSize="@dimen/button_checkbox_textview_font_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/recyclerViewDay" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

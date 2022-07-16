@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/textViewOptions"
+            android:layout_gravity="end"
+            android:layout_width="@dimen/textview_options_width_height"
+            android:layout_height="@dimen/textview_options_width_height"
+            android:paddingStart="@dimen/textview_options_padding_start"
+            android:text="@string/menu_icon"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textSize="@dimen/hamburger_menu_font_size"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textSize="@dimen/button_checkbox_textview_font_size" />
+
+        <TextView
+            android:id="@+id/textViewStressScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textSize="@dimen/button_checkbox_textview_font_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewStressors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textSize="@dimen/button_checkbox_textview_font_size" />
+
+        <TextView
+            android:id="@+id/textViewNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textSize="@dimen/button_checkbox_textview_font_size" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

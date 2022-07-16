@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_width">300dp</dimen>
+    <dimen name="title_font_size">32sp</dimen>
+    <dimen name="button_checkbox_textview_font_size">20sp</dimen>
+</resources>
