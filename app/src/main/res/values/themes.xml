@@ -1,0 +1,10 @@
+<resources>
+    <style name="Theme.SensoryDiary" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="android:colorAccent">@color/mint_green</item>
+        <item name="android:fontFamily">@font/source_sans_pro</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/lamp_black</item>
+        <item name="colorPrimary">@color/mint_green</item>
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+    </style>
+</resources>

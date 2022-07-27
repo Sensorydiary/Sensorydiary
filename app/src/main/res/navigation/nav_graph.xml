@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.github.sensorydiary.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.github.sensorydiary.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_viewPagerAdapter"
+            app:destination="@id/viewPagerAdapter" />
+        <action
+            android:id="@+id/action_menuFragment_to_addPersonFragment"
+            app:destination="@id/addPersonFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_editPersonFragment"
+            app:destination="@id/editPersonFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.github.sensorydiary.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/diaryFragment"
+        android:name="com.github.sensorydiary.DiaryFragment"
+        android:label="fragment_diary"
+        tools:layout="@layout/fragment_diary"/>
+    <fragment
+        android:id="@+id/statsFragment"
+        android:name="com.github.sensorydiary.StatsFragment"
+        android:label="fragment_stats"
+        tools:layout="@layout/fragment_stats" />
+    <fragment
+        android:id="@+id/viewPagerAdapter"
+        android:name="com.github.sensorydiary.ViewPagerAdapter"
+        android:label="fragment_view_pager_adapter"
+        tools:layout="@layout/fragment_view_pager_adapter" >
+        <action
+            android:id="@+id/action_viewPagerAdapter_to_addDayFragment"
+            app:destination="@id/addDayFragment" />
+        <action
+            android:id="@+id/action_viewPagerAdapter_to_editDayFragment"
+            app:destination="@id/editDayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addDayFragment"
+        android:name="com.github.sensorydiary.AddDayFragment"
+        android:label="fragment_add_day"
+        tools:layout="@layout/fragment_add_day" >
+        <argument
+            android:name="personId"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/editDayFragment"
+        android:name="com.github.sensorydiary.EditDayFragment"
+        android:label="fragment_edit_day"
+        tools:layout="@layout/fragment_edit_day" >
+        <argument
+            android:name="personId"
+            app:argType="integer" />
+        <argument
+            android:name="date"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPersonFragment"
+        android:name="com.github.sensorydiary.AddPersonFragment"
+        android:label="fragment_add_person"
+        tools:layout="@layout/fragment_add_person" />
+    <fragment
+        android:id="@+id/editPersonFragment"
+        android:name="com.github.sensorydiary.EditPersonFragment"
+        android:label="fragment_edit_person"
+        tools:layout="@layout/fragment_edit_person" >
+        <argument
+            android:name="personId"
+            app:argType="integer" />
+        <argument
+            android:name="personName"
+            app:argType="string" />
+    </fragment>
+</navigation>

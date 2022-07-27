@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/settingsIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/settings_icon"
+            android:padding="8dp"
+            android:src="@drawable/ic_baseline_settings_30"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewSensoryDiary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spinner_table_textview_margin_top"
+            android:text="@string/sensory_diary"
+            android:textSize="@dimen/title_font_size"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinnerSelectPerson"
+            android:layout_width="@dimen/portrait_spinner_width"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spinner_table_textview_margin_left"
+            android:layout_marginTop="@dimen/spinner_table_textview_margin_top"
+            android:layout_marginEnd="@dimen/spinner_table_textview_margin_right"
+            android:contentDescription="@string/select_person_dropdown_menu"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSelectPerson" />
+
+        <TextView
+            android:id="@+id/textViewSelectPerson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spinner_table_textview_margin_left"
+            android:layout_marginTop="@dimen/spinner_table_textview_margin_top"
+            android:layout_marginEnd="@dimen/spinner_table_textview_margin_right"
+            android:maxLines="2"
+            android:paddingStart="@dimen/textview_padding_left"
+            android:paddingEnd="@dimen/textview_padding_right"
+            android:text="@string/welcome"
+            android:textAlignment="center"
+            android:textSize="@dimen/button_checkbox_textview_font_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSensoryDiary" />
+
+        <Button
+            android:id="@+id/buttonSeeDiary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:width="@dimen/button_width"
+            android:text="@string/see_diary"
+            android:textSize="@dimen/button_checkbox_textview_font_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerSelectPerson" />
+
+        <Button
+            android:id="@+id/buttonAddPerson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/subsequent_button_margin_top"
+            android:width="@dimen/button_width"
+            android:text="@string/add_person"
+            android:textSize="@dimen/button_checkbox_textview_font_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonSeeDiary" />
+
+        <Button
+            android:id="@+id/buttonEditPerson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/subsequent_button_margin_top"
+            android:width="@dimen/button_width"
+            android:text="@string/edit_person"
+            android:textSize="@dimen/button_checkbox_textview_font_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonAddPerson" />
+
+        <Button
+            android:id="@+id/buttonDeletePerson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/subsequent_button_margin_top"
+            android:width="@dimen/button_width"
+            android:text="@string/delete_person"
+            android:textSize="@dimen/button_checkbox_textview_font_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonEditPerson" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

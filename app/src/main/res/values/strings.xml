@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">Sensory Diary</string>
+    <string name="welcome">Welcome! Please select a person from the dropdown menu below:</string>
+    <string name="see_diary">See diary</string>
+    <string name="sensory_diary">Sensory Diary</string>
+    <string name="select_person_dropdown_menu">Select person dropdown menu</string>
+    <string name="add_person">Add person</string>
+    <string name="edit_person">Edit person</string>
+    <string name="delete_person">Delete person</string>
+    <string name="log_in">Log in</string>
+    <string name="log_in_subtitle">Log in using your phone or tablet credential</string>
+    <string name="authentication_succeeded">Authentication succeeded!</string>
+    <string name="authentication_failed">Authentication failed</string>
+    <string name="authentication_error">Authentication error: %1$s</string>
+    <string name="biometric_error_no_hardware">No biometric features are available on this device.</string>
+    <string name="biometric_error_hardware_unavailable">Biometric features are currently unavailable.</string>
+    <string name="biometric_error_none_enrolled">Please add either an unlock screen password or a biometric feature to your device.</string>
+    <string name="biometric_error_security_update_required">A security update is required to access biometric features.</string>
+    <string name="biometric_error_unsupported">Your current Android version does not support the features required to log in.</string>
+    <string name="biometric_status_unknown">The status of the features on this device required to log in is unknown.</string>
+    <string name="stress_score">Stress score %1$s</string>
+    <string name="menu_icon">&#8942;</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="add_day">Add day</string>
+    <string-array name="tab_array">
+        <item>Diary</item>
+        <item>Stats</item>
+    </string-array>
+    <string name="stats_screen_explanation">The score is the average of the stress scores for days containing that stressor. Note that these same days may also contain other stressors.</string>
+    <string name="stressor">Stressor</string>
+    <string name="score">Score</string>
+    <string name="sight">Sight</string>
+    <string name="smell">Smell</string>
+    <string name="sound">Sound</string>
+    <string name="taste">Taste</string>
+    <string name="touch">Touch</string>
+    <string name="not_applicable">N/A</string>
+    <string name="enter_date">Enter date:</string>
+    <string name="select_stressors">Select stressors:</string>
+    <string name="add_stress_score">Stress score (1 to 10):</string>
+    <string name="notes_optional">Notes (optional):</string>
+    <string name="edit_day">Edit day</string>
+    <string name="edit_stressors">Edit stressors:</string>
+    <string name="edit_stress_score">Edit stress score (1 to 10):</string>
+    <string name="edit_notes">Edit notes:</string>
+    <string name="name">Name:</string>
+    <string name="ok">OK</string>
+    <string name="name_already_exists">Name already exists</string>
+    <string name="name_already_exists_instructions">A person with that name already exists in the database. Please choose a different name and try again.</string>
+    <string name="name_field_is_empty">Name field is empty</string>
+    <string name="name_field_is_empty_instructions">The name field is empty. Please add a name and try again.</string>
+    <string name="person_successfully_added">%1$s successfully added!</string>
+    <string name="person_successfully_deleted">%1$s successfully deleted.</string>
+    <string name="delete_confirmation">Delete confirmation</string>
+    <string name="delete_confirmation_instructions">Are you sure you want to delete %1$s from the database? Please note that all of the data related to that person will also be deleted.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="name_successfully_edited">Name successfully edited to %1$s!</string>
+    <string name="edit_name_field_is_empty_instructions">The name field is empty. The name field will be reset to the person currently being edited. Please add a name and try again.</string>
+    <string name="edit_name_already_exists_instructions">A person with that name already exists in the database. The name field will be reset to the person currently being edited. Please choose a different name and try again.</string>
+    <string name="incorrect_date_format">Incorrect date format</string>
+    <string name="incorrect_date_format_instructions">Please enter in a date that is in the %1$s format.</string>
+    <string name="incorrect_stress_score_format">Incorrect stress score format</string>
+    <string name="incorrect_stress_score_format_instructions">Please enter in a stress score that is a whole number between 1 and 10.</string>
+    <string name="future_date_entered">Future date entered</string>
+    <string name="future_date_entered_instructions">Please enter in a date that is today or earlier.</string>
+    <string name="date_already_exists">Date already exists</string>
+    <string name="date_already_exists_instructions">This date in the database already exists for this person. Please either change the date and try again, or edit the day currently in the database.</string>
+    <string name="day_successfully_added">Day successfully added!</string>
+    <string name="no_sensory_stressors">No sensory stressors</string>
+    <string name="day_successfully_edited">Day successfully edited!</string>
+    <string name="edit_date">Edit date:</string>
+    <string name="edit_date_already_exists_instructions">This date in the database already exists for this person. The date field will be reset to the date currently in the database.</string>
+    <string name="settings_icon">Settings icon</string>
+    <string name="settings">Settings</string>
+    <string name="select_date_input_format">Select date input format:</string>
+    <string name="save">Save</string>
+    <string name="select_date_format_dropdown_menu">Select date format dropdown menu</string>
+    <string name="day_month_year_format">DD-MM-YYYY</string>
+    <string name="month_day_year_format">MM-DD-YYYY</string>
+    <string-array name="date_formats_array">
+        <item>@string/day_month_year_format</item>
+        <item>@string/month_day_year_format</item>
+    </string-array>
+    <string name="settings_saved">Settings saved!</string>
+    <string name="sensory_stressors_description">Many autistic people experience everyday sensory stimuli much more intensely than the average person.
+        Being exposed to certain sensory stimuli can therefore cause them significant anxiety and stress.
+        \n\n Common sensory stressors include (but are not limited to): \n\n
+        \u2022 Noisy environments \n
+        \u2022 Bright lights \n
+        \u2022 Vibrant colours \n
+        \u2022 Certain smells, such as those of perfume, paint, or chemicals \n
+        \u2022 The tastes or textures of certain foods \n
+        \u2022 Clothing tags or seams \n
+    </string>
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textViewSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spinner_table_textview_margin_top"
+            android:text="@string/settings"
+            android:textSize="@dimen/title_font_size"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewSelectDateFormat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spinner_table_textview_margin_top"
+            android:text="@string/select_date_input_format"
+            android:textSize="@dimen/button_checkbox_textview_font_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewSettings" />
+
+        <Spinner
+            android:id="@+id/spinnerSelectDateFormat"
+            android:layout_width="@dimen/portrait_spinner_width"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spinner_table_textview_margin_left"
+            android:layout_marginTop="@dimen/spinner_table_textview_margin_top"
+            android:layout_marginEnd="@dimen/spinner_table_textview_margin_right"
+            android:contentDescription="@string/select_date_format_dropdown_menu"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSelectDateFormat" />
+
+        <Button
+            android:id="@+id/buttonSaveSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/initial_button_margin_top"
+            android:width="@dimen/button_width"
+            android:text="@string/save"
+            android:textSize="@dimen/button_checkbox_textview_font_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/spinnerSelectDateFormat" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

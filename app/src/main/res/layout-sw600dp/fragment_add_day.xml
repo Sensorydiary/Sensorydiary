@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddDayFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textViewAddDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/spinner_table_textview_margin_left"
+            android:layout_marginTop="@dimen/spinner_table_textview_margin_top"
+            android:layout_marginEnd="@dimen/spinner_table_textview_margin_right"
+            android:text="@string/add_day"
+            android:textSize="@dimen/title_font_size"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewEnterDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spinner_table_textview_margin_top"
+            android:text="@string/enter_date"
+            android:textSize="@dimen/button_checkbox_textview_font_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewAddDay" />
+
+        <!-- The date input type doesn't display a hyphen on some phone keyboards -->
+        <EditText
+            android:id="@+id/editTextEnterDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/edittext_margin_top"
+            android:ems="10"
+            android:inputType="text"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewEnterDate"
+            tools:ignore="TextFields" />
+
+        <TextView
+            android:id="@+id/textViewSelectStressors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spinner_table_textview_margin_top"
+            android:text="@string/select_stressors"
+            android:textSize="@dimen/button_checkbox_textview_font_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTextEnterDate" />
+
+        <CheckBox
+            android:id="@+id/checkBoxAddSight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/sight"
+            android:textSize="@dimen/button_checkbox_textview_font_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewSelectStressors" />
+
+        <CheckBox
+            android:id="@+id/checkBoxAddSmell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/smell"
+            android:textSize="@dimen/button_checkbox_textview_font_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkBoxAddSight" />
+
+        <CheckBox
+            android:id="@+id/checkBoxAddSound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sound"
+            android:textSize="@dimen/button_checkbox_textview_font_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkBoxAddSmell" />
+
+        <CheckBox
+            android:id="@+id/checkBoxAddTaste"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/taste"
+            android:textSize="@dimen/button_checkbox_textview_font_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkBoxAddSound" />
+
+        <CheckBox
+            android:id="@+id/checkBoxAddTouch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/touch"
+            android:textSize="@dimen/button_checkbox_textview_font_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkBoxAddTaste" />
+
+        <TextView
+            android:id="@+id/textViewAddStressScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/add_stress_score"
+            android:textSize="@dimen/button_checkbox_textview_font_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/checkBoxAddTouch" />
+
+        <EditText
+            android:id="@+id/editTextAddStressScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/edittext_margin_top"
+            android:ems="10"
+            android:inputType="number"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewAddStressScore" />
+
+        <TextView
+            android:id="@+id/textViewAddNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spinner_table_textview_margin_top"
+            android:text="@string/notes_optional"
+            android:textSize="@dimen/button_checkbox_textview_font_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTextAddStressScore" />
+
+        <EditText
+            android:id="@+id/editTextAddNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/edittext_margin_top"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewAddNotes" />
+
+        <Button
+            android:id="@+id/buttonAddNewDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/initial_button_margin_top"
+            android:width="@dimen/button_width"
+            android:text="@string/add_day"
+            android:textSize="@dimen/button_checkbox_textview_font_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/editTextAddNotes" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
